@@ -1,16 +1,47 @@
-# React + Vite
+# 💼 HireHub Job Posting Application - Backend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the **backend service** for the Job Posting Application.  
+It provides a RESTful API for managing job listings using **Node.js**, **Express.js**, and **MongoDB (Mongoose)**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Tech Stack
 
-## React Compiler
+- **Node.js** – JavaScript runtime environment  
+- **Express.js** – Web framework for Node.js  
+- **MongoDB** – NoSQL database  
+- **Mongoose** – Object Data Modeling (ODM) library for MongoDB  
+- **dotenv** – For managing environment variables  
+- **CORS** – Enables cross-origin requests  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Setup Instructions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/<your-username>/job-posting-backend.git
+cd job-posting-backend
+```
+### 2️⃣ Install Dependencies
+npm install
+
+### 3️⃣ Configure Environment Variables
+Create a .env file in the root directory and add:
+MONGODB=<your_mongodb_connection_uri>
+PORT=5000
+
+### 4️⃣ Start the Server
+npm start
+
+---
+
+## 📡 API Endpoints
+<img width="1182" height="367" alt="image" src="https://github.com/user-attachments/assets/a1c7ac57-d91c-41a6-b328-6b2155dd3113" />
+
+---
+
+## 📁 Project Structure
+<img width="483" height="339" alt="image" src="https://github.com/user-attachments/assets/446734bd-eb15-4229-9edf-f97a6e1aa520" />
+
+
