@@ -65,4 +65,4 @@ npm run dev
 ## 📬 **Contact**
 
 For bugs, feedback, or feature requests, please reach out:
-📧 **[vigneshck2003.code@gmail.com](mailto:vigneshck.dev@gmail.com)**
+📧 **[vigneshck.dev@gmail.com](mailto:vigneshck.dev@gmail.com)**
