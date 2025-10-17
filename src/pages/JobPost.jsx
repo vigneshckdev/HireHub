@@ -50,7 +50,7 @@ const JobPost = () => {
       if (response.ok) {
         const result = await response.json();
         console.log("Server response:", result);
-        alert("✅ Job Posted Successfully!");
+        alert("Job Posted Successfully!");
         
         setFormData({
           jobTitle: "",
@@ -65,7 +65,7 @@ const JobPost = () => {
       } else {
         const errorText = await response.text();
         console.error("Failed to post job. Server responded with:", errorText);
-        alert("❌ Failed to post job. Check console for details.");
+        alert("Failed to post job. Check console for details.");
       }
     } catch (error) {
       console.error("Error posting job:", error);
