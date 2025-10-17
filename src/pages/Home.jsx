@@ -87,7 +87,7 @@ function Home() {
           </div>
         </div>
       </div>
-
+      <h2 className="container mt-3">All Jobs</h2>
       {/* Status Messages */}
       <div className="container mt-3">
         {loading && <div className="text-center text-muted">Loading jobs...</div>}
