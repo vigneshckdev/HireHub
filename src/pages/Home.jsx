@@ -123,7 +123,7 @@ function Home() {
                       {/* Primary Blue Button */}
                       <button
                         className="btn btn-primary btn-sm px-3"
-                        onClick={() => navigate(`/job/${job._id}`)}
+                        onClick={() => navigate(`/jobPostingInfo/${job._id}`)}
                       >
                         See Details
                       </button>
