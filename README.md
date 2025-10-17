@@ -27,9 +27,12 @@ cd job-posting-backend
 npm install
 
 ### 3️⃣ Configure Environment Variables
-Create a .env file in the root directory and add:
+Create a `.env` file in the root directory and add:
+
+```env
 MONGODB=<your_mongodb_connection_uri>
 PORT=5000
+```
 
 ### 4️⃣ Start the Server
 npm start
