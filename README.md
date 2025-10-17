@@ -24,7 +24,9 @@ git clone https://github.com/<your-username>/job-posting-backend.git
 cd job-posting-backend
 ```
 ### 2️⃣ Install Dependencies
+```bash
 npm install
+```
 
 ### 3️⃣ Configure Environment Variables
 Create a `.env` file in the root directory and add:
@@ -35,7 +37,9 @@ PORT=5000
 ```
 
 ### 4️⃣ Start the Server
+```bash
 npm start
+```
 
 ---
 
