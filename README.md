@@ -45,13 +45,6 @@ npm start
 
 ## 📡 API Endpoints
 <img width="1182" height="367" alt="image" src="https://github.com/user-attachments/assets/a1c7ac57-d91c-41a6-b328-6b2155dd3113" />
-| Method     | Endpoint           | Description                            |
-| ----------- | ------------------ | -------------------------------------- |
-| **GET**    | `/`                | Root route – returns a welcome message |
-| **GET**    | `/jobPostings`     | Fetch all job postings                 |
-| **POST**   | `/jobPostings`     | Create a new job posting               |
-| **GET**    | `/jobPostings/:id` | Fetch a single job posting by ID       |
-| **DELETE** | `/jobPostings/:id` | Delete a job posting by ID             |
 
 
 ---
