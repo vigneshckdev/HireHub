@@ -57,7 +57,7 @@ npm run dev
 
 * 🧩 **Vite** – Fast bundler and dev server
 * 🔐 **Dotenv** – Environment variable management
-* 🔄 **Axios / Fetch API** – For frontend–backend communication
+* 🔄 **Fetch API** – For frontend–backend communication
 * 🌐 **CORS** – Enable cross-origin requests between frontend and backend
 
 ---
