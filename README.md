@@ -1,55 +1,68 @@
-# 💼 HireHub Job Posting Application - Backend
-
-This repository contains the **backend service** for the Job Posting Application.  
-It provides a RESTful API for managing job listings using **Node.js**, **Express.js**, and **MongoDB (Mongoose)**.
+# HireHub
+HireHub is a simple job posting platform where companies can post job openings. It provides an easy way to share job opportunities with potential candidates.
 
 ---
 
-## 🧩 Tech Stack
-
-- **Node.js** – JavaScript runtime environment  
-- **Express.js** – Web framework for Node.js  
-- **MongoDB** – NoSQL database  
-- **Mongoose** – Object Data Modeling (ODM) library for MongoDB  
-- **dotenv** – For managing environment variables  
-- **CORS** – Enables cross-origin requests  
+## 💡 **Why HireHub?**
+- **Job Posting Form**: Companies can create new job listings by filling out a simple form with:
+  - Job title
+  - Company name
+  - Location
+  - Salary
+  - Job type
+  - Job description and qualifications
+- **View Job Postings**: Candidates can browse all available job postings.
+- **Apply for Jobs**: Candidates can apply to jobs directly if they meet the eligibility criteria.
+- **User-friendly Interface**: Clean and intuitive design for both companies and candidates.
 
 ---
 
-## ⚙️ Setup Instructions
+## 🌐 **Demo URL**
+🔗 [**Live Demo**](https://hire-hub-hazel-six.vercel.app/)
 
-### 1️⃣ Clone the Repository
+---
+
+## ⚡ **Quick Start**
 ```bash
-git clone https://github.com/<your-username>/job-posting-backend.git
-cd job-posting-backend
-```
-### 2️⃣ Install Dependencies
-```bash
+# Clone the repository
+https://github.com/vigneshckdev/HireHub.git
+
+# Navigate into the project
+cd <your-repo>
+
+# Install dependencies
 npm install
+
+# Start the development server
+npm run dev
 ```
 
-### 3️⃣ Configure Environment Variables
-Create a `.env` file in the root directory and add:
+## 🧠 **Tech Stack**
 
-```env
-MONGODB=<your_mongodb_connection_uri>
-PORT=5000
-```
+### 🖥️ **Frontend**
+* ⚛️ **React.js** – Component-based architecture for building UI
+* 🧭 **React Router** – Handles client-side navigation
+* 🎨 **Bootstrap / CSS** – For responsive and clean UI design
 
-### 4️⃣ Start the Server
-```bash
-npm start
-```
+### ⚙️ **Backend**
+
+* 🖥️ **Node.js** – JavaScript runtime for scalable backend logic
+* 🚀 **Express.js** – Lightweight framework for routing and APIs
+
+### 🗄️ **Database**
+
+* 🍃 **MongoDB** – NoSQL database for flexible and efficient data storage
+
+### 🔧 Stack & Utilities
+
+* 🧩 **Vite** – Fast bundler and dev server
+* 🔐 **Dotenv** – Environment variable management
+* 🔄 **Fetch API** – For frontend–backend communication
+* 🌐 **CORS** – Enable cross-origin requests between frontend and backend
 
 ---
 
-## 📡 API Endpoints
-<img width="1182" height="367" alt="image" src="https://github.com/user-attachments/assets/a1c7ac57-d91c-41a6-b328-6b2155dd3113" />
+## 📬 **Contact**
 
-
----
-
-## 📁 Project Structure
-<img width="483" height="339" alt="image" src="https://github.com/user-attachments/assets/446734bd-eb15-4229-9edf-f97a6e1aa520" />
-
-
+For bugs, feedback, or feature requests, please reach out:
+📧 **[vigneshck.dev@gmail.com](mailto:vigneshck.dev@gmail.com)**
