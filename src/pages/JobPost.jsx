@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const JobPost = () => {
   const [formData, setFormData] = useState({
@@ -65,7 +67,7 @@ const JobPost = () => {
 
     const qualifications = formData.jobQualification
       ? formData.jobQualification
-          .split("\n")
+          .split(/\r?\n/)
           .map((q) => q.trim())
           .filter(Boolean)
       : [];
@@ -88,7 +90,12 @@ const JobPost = () => {
       });
 
       if (response.ok) {
-        alert("Job Posted Successfully!");
+        toast.success("Job Posted Successfully!", {
+          theme: "colored",
+          position: "bottom-right",
+          autoClose: 2000,
+        });
+
         setFormData({
           jobTitle: "",
           companyName: "",
@@ -98,15 +105,23 @@ const JobPost = () => {
           jobDescription: "",
           jobQualification: "",
         });
-        navigate("/");
+
+        // Delay navigation slightly to let toast appear
+        setTimeout(() => navigate("/"), 2000);
       } else {
         const errorText = await response.text();
         console.error("Failed to post job. Server responded with:", errorText);
-        alert("Failed to post job. Check console for details.");
+        toast.error("❌ Failed to post job. Check console for details.", {
+          position: "top-right",
+          autoClose: 3000,
+        });
       }
     } catch (error) {
       console.error("Error posting job:", error);
-      alert("Something went wrong. Try again!");
+      toast.error("⚠️ Something went wrong. Try again!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
     }
   };
 
@@ -256,6 +271,9 @@ const JobPost = () => {
           </div>
         </div>
       </div>
+
+      {/* Toast Container */}
+      <ToastContainer />
     </>
   );
 };
